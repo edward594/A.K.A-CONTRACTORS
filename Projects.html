@@ -1,0 +1,286 @@
+<! Doctype html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A.K.A CONTRACTORS</title>
+<head>
+<style>
+      
+          /* Reset margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: brown;
+        }
+
+        /* Styling for the navbar container */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333; /* dark grey for a rugged look */
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* adds a bit of depth */
+        }
+
+        /* Navbar links */
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* Construction site-inspired colors */
+        .navbar a:nth-child(1) { background-color: #228B22; } /* orange */
+        .navbar a:nth-child(2) { background-color: #228B22; } /* yellow */
+        .navbar a:nth-child(3) { background-color: #228B22; } /* grey */
+        .navbar a:nth-child(4) { background-color: #228B22; } /* black */
+        .navbar a:nth-child(5) { background-color: #228B22; } /* dark grey */
+
+        /* Hover effect for links */
+        .navbar a:hover {
+            transform: translateY(-5px); /* adds a subtle lift on hover */
+            background-color: #800000; /* a darker grey shade when hovered */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar a {
+                margin: 5px 0;
+                width: 100%;
+                text-align: center;
+            }
+        }
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Algerian;
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    color: ;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    background-color: brown;
+}
+
+.gallery-item {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    controls: visible;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    color: blue;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}   
+ .contact-icons {
+            display: flex;
+            align-items: center;
+            margin: auto;
+            justify-content: center;
+            gap: 15px;
+        }
+        .contact-icons a {
+            text-decoration: none;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+            font-size: 24px;
+        }
+        .facebook { background-color: #3b5998; }
+        .facebook:hover { background-color: #2d4373; }
+        .instagram { background-color: #e1306c; }
+        .instagram:hover { background-color: #bc2a8d; }
+        .imo { background-color: #1ebea5; }
+        .imo:hover { background-color: #129077; }
+        .phone { background-color: #25d366; }
+        .phone:hover { background-color: #1ebe5e; }
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #001F54;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0
+}
+.time button {
+       width: 10%;
+       height: 7.5%;
+       background-color: orange;
+       border-radius: 50px;
+       font-size: 30px;
+       }
+</style>
+</head>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>A.K.A Contractors & Architects</h1>
+    </header><br/>
+
+<body>
+
+  <!-- Navbar with five links -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="Projects.html">Projects</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Contacts.html">Contact</a>
+    </div>
+
+
+
+<!-- Projects Section -->
+    
+            <h2><u>Our Projects</u></h2>
+            
+                <!-- Project Images -->
+               
+               <div class="gallery">
+        <img src="C:\\Users\\mwang\\Desktop\\Programming\\Peter's Exam\\images\\105.jpg" alt="Image 1" class="gallery-item">
+        <img src="C:\\Users\\mwang\\Desktop\\Programming\\Peter's Exam\\images\\865387_5.jpg" alt="Image 2" class="gallery-item">
+        <img src="C:\\Users\\mwang\\Desktop\\Programming\\Peter's Exam\\images\\WugGiOUeiUUbWXdvUYJGiFhFKDhvbjvJ.jfif" alt="Image 3" class="gallery-item">
+        <img src="C:\\Users\\mwang\\Desktop\\Programming\\Peter's Exam\\images\\case-popolari-in-kenya.jpg" alt="Image 4" class="gallery-item">
+        <img src="C:\\Users\\mwang\\Desktop\\Programming\\Peter's Exam\\images\\R (3).jfif" alt="Image 5" class="gallery-item">
+        <img src="C:\\Users\\mwang\\Desktop\\Programming\\Peter's Exam\\images\\kitengela1-850x570.jpg" alt="Image 4" class="gallery-item">
+        <img src="C:\\Users\\mwang\\Desktop\\Programming\\Peter's Exam\\images\\R (1).jfif" alt="Image 5" class="gallery-item">
+        <video src="C:\\Users\\mwang\\Desktop\\Programming\\Peter's Exam\\images\\BUILDING A HOUSE IN KENYA.mp4"alt="" class="gallery-item">
+     </div>
+
+    <!-- Modal for viewing image -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+<div class="time">
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Time</button>
+<p id="demo"></p>
+</div>
+
+    
+</body>
+<hr>
+   <!-- Footer -->
+    <footer>
+
+ <div class="contact-icons">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/edward mwangi" target="_blank" class="facebook" title="Facebook Profile">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/@boy.wonder5" target="_blank" class="instagram" title="Instagram Profile">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <!-- Whatsapp -->
+        <a href="https://wa.me/+254759163807" target="_blank" class="imo" title="IMO Profile">
+            <i class="fab fa-whatsapp"></i> <!-- IMO doesn't have a distinct Font Awesome icon, so using WhatsApp icon -->
+        </a>
+        <!-- Phone Number -->
+        <a href="tel:+254759163807" class="phone" title="Call Us">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Include Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+        <div class="container">
+            <p>&copy; 2024 A.K.A Contractors & Architects. All rights reserved.</p>
+            
+        </div>
+    </footer>
+<html>

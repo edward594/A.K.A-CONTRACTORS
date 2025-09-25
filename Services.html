@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.K.A Contractors & Architects</title>
+<style>
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #001F54;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+ /* Reset margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Styling for the navbar container */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333; /* dark grey for a rugged look */
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* adds a bit of depth */
+        }
+
+        /* Navbar links */
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* Construction site-inspired colors */
+        .navbar a:nth-child(1) { background-color: #228B22; } /* orange */
+        .navbar a:nth-child(2) { background-color: #228B22; } /* yellow */
+        .navbar a:nth-child(3) { background-color: #228B22; } /* grey */
+        .navbar a:nth-child(4) { background-color: #228B22; } /* black */
+        .navbar a:nth-child(5) { background-color: #228B22; } /* dark grey */
+
+        /* Hover effect for links */
+        .navbar a:hover {
+            transform: translateY(-5px); /* adds a subtle lift on hover */
+            background-color: #800000; /* a darker grey shade when hovered */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar a {
+                margin: 5px 0;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+
+
+
+
+.about, .services, .projects, .contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2, .services h2, .projects h2, .contact h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.team, .values, .service-list, .project-gallery {
+    margin-top: 30px;
+}
+
+.service-list, .project-gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item, .project-item {
+    width: 30%;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+}
+
+.contact form {
+    margin: 20px 0;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background: #001F54;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+ /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: brown;
+            color: #333;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Section headings */
+        h2, h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        h2 {
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 28px;
+            color: #f7941d; /* construction site orange */
+        }
+
+        /* Section styling */
+        .section {
+            margin-bottom: 50px;
+        }
+
+        /* Service categories */
+        .service-category {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        /* Each service item */
+        .service-item {
+            flex: 1 1 calc(33.33% - 20px);
+            background-color: #fff;
+            border: 2px solid #f7941d;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Service headings */
+        .service-item h4 {
+            margin-bottom: 15px;
+            font-size: 22px;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        /* Service descriptions */
+        .service-item p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* Project Showcase */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project-item {
+            flex: 1 1 calc(50% - 20px);
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .project-item h5 {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #444;
+        }
+
+        .project-item p {
+            color: #666;
+        }
+
+        /* Testimonials section */
+        .testimonials {
+            background-color: #e9e9e9;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .testimonial-item {
+            margin-bottom: 15px;
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+            color: #444;
+        }
+
+        .testimonial-item span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #f7941d;
+        }
+
+        /* Call-to-action */
+        .cta {
+            text-align: center;
+            margin: 50px 0;
+        }
+.cta button a {
+              text-decoration: none;
+              colour: #fff;
+              }
+
+        .cta button {
+            padding: 10px 30px;
+            background-color: #f7941d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #333;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .service-item, .project-item {
+                flex: 1 1 100%;
+            }
+        }
+.main-container {
+                 font-size: 60px;
+                 }
+</style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>A.K.A Contractors & Architects</h1>
+    </header><br/>
+  <!-- Navbar with five links -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="Projects.html">Projects</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Contacts.html">Contact</a>
+    </div>
+
+  
+
+    <!-- Main Container -->
+<script class="text/javascript">
+//You will recieve a different greeting based
+//on what day it is.Note that Sunday=0,
+//Monday=1, Tuesday=2, etc.
+var d=new Date();
+theDay=d.getDay();
+switch(theDay)
+{
+case 5:
+document.write("<marquee><b><i>Finally Friday!</i></b></marquee>");
+break;
+case 0:
+document.write("<marquee><b><i>Sleeping Sunday</i></b></marquee>");
+break;
+case 1:
+document.write("<marquee><b><i>Hangover Monday</i></b></marquee>");
+break;
+case 4:
+document.write("<marquee><b><i>Throwback Thursday</i></b></marquee>");
+break;
+case 3:
+document.write("<marquee><b><i>Crush Wednesday</i></b></marquee>");
+brea;
+case 2:
+document.write("<marquee><b><i>Maandamano Tuesday</i></b></marquee>");
+break;case 6:
+document.write("<marquee><b><i>Parting Sunday</i></b></marquee>");
+break;
+}
+</script>
+    <div class="container">
+        
+        <!-- Introduction Section -->
+        <section class="section">
+            <h2>Our Services</h2>
+            <p style="text-align: center;">A.K.A Contractors and Architects provides top-quality architectural and construction services with over 20 years of experience. We deliver solutions that are tailored to your specific needs, whether it's a residential, commercial, or industrial project.</p>
+        </section>
+
+        <!-- Service Categories -->
+        <section class="section">
+            <h3>What We Offer</h3>
+            <div class="service-category">
+                <div class="service-item">
+                    <h4>Architectural Design</h4>
+                    <p>We provide cutting-edge design services, including conceptual plans, 3D renderings, and sustainable solutions to bring your vision to life.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Construction Services</h4>
+                    <p>From general contracting to project management, our team handles every aspect of the construction process with a focus on quality and efficiency.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Renovations & Remodeling</h4>
+                    <p>Our renovation services transform residential and commercial spaces to meet modern standards while preserving their original character.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Interior Design</h4>
+                    <p>We offer complete interior design services, including space planning, material selection, and decor consultation to create functional and beautiful spaces.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Consulting & Feasibility Studies</h4>
+                    <p>Our experts provide consulting services, including site analysis and project feasibility studies to ensure a successful outcome.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Showcase -->
+        <section class="section">
+            <h3>Recent Projects</h3>
+            <div class="projects">
+                <div class="project-item">
+                    <img src="C:\\Users\\mwang\\Desktop\\Programming\\Peter's Exam\\images\\R (1).jfif" alt="Project Image 1">
+                    <h5>Modern Residence in San Francisco</h5>
+                    <p>We designed and built a modern home featuring sustainable materials and an open-concept layout.</p>
+                </div>
+                <div class="project-item">
+                    <img src="C:\\Users\\mwang\\Desktop\\Programming\\Peter's Exam\\images\\kitengela1-850x570.jpg" alt="Project Image 2">
+                    <h5>Downtown Office Complex</h5>
+                    <p>This commercial project involved the complete construction of a state-of-the-art office space in downtown Los Angeles.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section testimonials">
+            <h3>What Our Clients Say</h3>
+            <div class="testimonial-item">
+                <p>"A.K.A Contractors and Architects delivered beyond our expectations. The team was professional and attentive to every detail."</p>
+                <span>- John and Sarah D.</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"Their commitment to quality and timelines made our renovation project stress-free. Highly recommended!"</p>
+                <span>- Lisa M.</span>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h3>Ready to start your project?</h3>
+            <button><a href="Contacts.html">Contact Us Today!</a></button>
+        </section>
+
+    </div>
+
+    </section>
+
+ 
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 A.K.A Contractors & Architects. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
